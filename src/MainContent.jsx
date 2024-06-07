@@ -18,20 +18,25 @@ export default function MainContent() {
 
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
-      <div style={{ position: "absolute", top: "0", left: "0", zIndex: "-1" }}>
-        <SideIconsGradient />
-      </div>
+      {window.innerWidth > 1080 && (
+        <div
+          style={{ position: "absolute", top: "0", left: "0", zIndex: "-1" }}
+        >
+          <SideIconsGradient />
+        </div>
+      )}
       <div
         style={{
-          width: "100%",
-          height: window.innerHeight,
+          maxWidth: "100%",
+          height: windowHeight,
           minHeight: "500px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "flex-end",
           color: "#777",
-          paddingLeft: "550px",
+          paddingTop: window.innerWidth < 1080 && "25px",
+          paddingLeft: window.innerWidth > 1080 && "550px",
         }}
       >
         <div
@@ -42,7 +47,12 @@ export default function MainContent() {
             padding: "0 57px",
           }}
         >
-          <h1 style={{ marginRight: "25px", fontSize: "45px" }}>
+          <h1
+            style={{
+              marginRight: "25px",
+              fontSize: window.innerWidth > 385 ? "45px" : "35px",
+            }}
+          >
             Hello, I'm Lucas!
           </h1>
           <img

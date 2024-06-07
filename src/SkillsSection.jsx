@@ -18,7 +18,7 @@ export default function SkillsSection() {
   return (
     <div
       style={{
-        width: "100%",
+        maxWidth: "100%",
         background: "linear-gradient(to right, #bbb, #eee, #aaa)",
         color: "#333",
         padding: "30px 57px",
@@ -36,7 +36,7 @@ export default function SkillsSection() {
       </p>
       <div
         style={{
-          width: "90%",
+          width: "100%",
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",

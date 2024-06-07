@@ -1,3 +1,5 @@
+import { useState } from "react";
+import SideMenu from "./SideMenu";
 import Header from "./Header";
 import MainContent from "./MainContent";
 import SkillsSection from "./SkillsSection";
@@ -6,16 +8,18 @@ import Footer from "./Footer";
 import "./App.css";
 
 function App() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
   return (
     <div
       style={{
+        maxWidth: "100%",
         display: "flex",
         flexDirection: "column",
-        width: "100%",
-        height: "100%",
       }}
     >
-      <Header />
+      {isMenuOpen && <SideMenu closeMenu={() => setMenuOpen(false)} />}
+      <Header openMenu={() => setMenuOpen(true)} />
       <MainContent />
       <SkillsSection />
       <ExperienceSection />

@@ -7,29 +7,77 @@ export default function SocialButton(props) {
 
   return (
     <div
-      className={`socialButton ${isMouseOver ? "hovered" : ""}`}
+      className={`socialButton ${
+        !props.sideMenu && isMouseOver ? "hovered" : ""
+      }`}
+      style={props.sideMenu && { padding: "0 10px" }}
       onClick={() => {
-        props.type == "linkedin"
+        props.name == "LinkedIn"
           ? window.open("https://www.linkedin.com/in/lucasnbbastos")
-          : props.type == "github"
+          : props.name == "GitHub"
           ? window.open("https://github.com/Lucas1nogueira")
-          : props.type == "email" &&
+          : props.name == "Email" &&
             open("mailto:nog.lucas.1204@gmail.com", "_self");
       }}
       onMouseOver={() => setMouseOver(true)}
       onMouseLeave={() => setMouseOver(false)}
     >
-      {props.type == "linkedin" ? (
-        <FaLinkedin style={{ paddingRight: "5px" }} size={35} color="#999" />
-      ) : props.type == "github" ? (
-        <FaGithub style={{ paddingRight: "5px" }} size={35} color="#999" />
+      {props.name == "LinkedIn" ? (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <FaLinkedin
+            style={{ paddingRight: "5px" }}
+            size={35}
+            color={props.sideMenu ? "white" : "#999"}
+          />
+          {props.sideMenu && (
+            <p style={{ fontSize: "18px", color: "white" }}>LinkedIn</p>
+          )}
+        </div>
+      ) : props.name == "GitHub" ? (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <FaGithub
+            style={{ paddingRight: "5px" }}
+            size={35}
+            color={props.sideMenu ? "white" : "#999"}
+          />
+          {props.sideMenu && (
+            <p style={{ fontSize: "18px", color: "white" }}>GitHub</p>
+          )}
+        </div>
       ) : (
-        props.type == "email" && (
-          <MdEmail style={{ paddingRight: "5px" }} size={35} color="#999" />
+        props.name == "Email" && (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
+            <MdEmail
+              style={{ paddingRight: "5px" }}
+              size={35}
+              color={props.sideMenu ? "white" : "#999"}
+            />
+            {props.sideMenu && (
+              <p style={{ fontSize: "18px", color: "white" }}>Email</p>
+            )}
+          </div>
         )
       )}
-      {isMouseOver && (
-        <p style={{ fontSize: "14px", color: "#333" }}>{props.type}</p>
+      {!props.sideMenu && isMouseOver && (
+        <p style={{ fontSize: "14px", color: "#777" }}>{props.name}</p>
       )}
     </div>
   );

@@ -5,7 +5,7 @@ export default function ExperienceSection() {
   return (
     <div
       style={{
-        width: "100%",
+        maxWidth: "100%",
         background:
           "radial-gradient(circle at center, #8D8258 30%, #5b522e 100%)",
         color: "white",
@@ -76,7 +76,7 @@ export default function ExperienceSection() {
         </div>
         <div
           style={{
-            width: "90%",
+            width: "100%",
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
