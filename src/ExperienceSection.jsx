@@ -9,7 +9,7 @@ export default function ExperienceSection() {
         background:
           "radial-gradient(circle at center, #8D8258 30%, #5b522e 100%)",
         color: "white",
-        padding: "30px 57px",
+        padding: "30px 0 30px 57px",
       }}
     >
       <div style={{ marginBottom: "20px" }}>
@@ -18,14 +18,15 @@ export default function ExperienceSection() {
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
+            paddingRight: "57px",
           }}
         >
           <FaBook size={30} style={{ paddingRight: "5px" }} />
           <h1 style={{ fontSize: "35px" }}>Education</h1>
         </div>
         <p style={{ margin: 0, fontSize: "18px" }}>
-          Currently in the 6th semester of a Technologist Degree in Systems
-          Analysis and Development at{" "}
+          Almost finishing a Technologist Degree in Systems Analysis and
+          Development at{" "}
           <a
             href="https://ifba.edu.br"
             style={{
@@ -44,6 +45,7 @@ export default function ExperienceSection() {
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
+            paddingRight: "57px",
           }}
         >
           <FaDev size={30} style={{ paddingRight: "5px" }} />
@@ -79,20 +81,24 @@ export default function ExperienceSection() {
             width: "100%",
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-between",
+            justifyContent: "flex-start",
             flexWrap: "wrap",
           }}
         >
           <ProjectCard
-            title="MyTasks"
-            description="A task manager with basic operations (creation, editing, and deletion)
-        for notes/tasks, using React Native."
-            link="https://github.com/Lucas1nogueira/mytasks"
+            title="Library System"
+            description="Simple C library simulation project, with data recording in text file."
+            link="https://github.com/Lucas1nogueira/biblioteca"
           />
           <ProjectCard
-            title="Gym Backend"
-            description="Contribution to the development of the back-end project using Laravel for gym management, carried out during the internship."
-            link="https://github.com/kaiofs122/academybackend"
+            title="Professor Evaluation System (SAD)"
+            description="Contribution to the development of the professor evaluation system at IFBA Irecê Campus."
+            link="https://github.com/jonatasfbastos/sad"
+          />
+          <ProjectCard
+            title="Animainfo"
+            description="Web project on endangered species, created as a required task at IFBA."
+            link="https://github.com/Lucas1nogueira/projeto-web"
           />
           <ProjectCard
             title="SGIF (Backend)"
@@ -105,19 +111,64 @@ export default function ExperienceSection() {
             link="https://github.com/jonatasfbastos/sgif_backend"
           />
           <ProjectCard
-            title="SAD"
-            description="Contribution to the development of the professor evaluation system at IFBA Irecê Campus."
-            link="https://github.com/Kennedyss01/modulo-rh"
-          />
-          <ProjectCard
-            title="Animainfo"
-            description="Web project on endangered species, created as a required task at IFBA."
-            link="https://github.com/Lucas1nogueira/projeto-web"
-          />
-          <ProjectCard
-            title="Módulo RH"
+            title="Human Resources Module"
             description="Contribution to the development of a human resources module, carried out as a course evaluation at IFBA."
             link="https://github.com/Kennedyss01/modulo-rh"
+          />
+          <ProjectCard
+            title="User View"
+            description="Simple project using Node.js for user management, using Express and Mongoose."
+            link="https://github.com/Lucas1nogueira/user-view"
+          />
+          <ProjectCard
+            title="Marketplace"
+            description="Project developed during an internship for learning, using PHP and the Laravel framework."
+            link="https://github.com/Lucas1nogueira/treinamento-laravel-estagio"
+          />
+          <ProjectCard
+            title="Gym Backend"
+            description="Contribution to the development of the back-end project using Laravel for gym management, carried out during the internship."
+            link="https://github.com/kaiofs122/academybackend"
+          />
+          <ProjectCard
+            title="Simple Banking System"
+            description="Banking system simulation project using classes and annotations in Python."
+            link="https://github.com/Lucas1nogueira/sistema-bancario"
+          />
+          <ProjectCard
+            title="Workout API"
+            description="API built for managing athletes, categories and training centers, using technologies such as Python, FastAPI and Docker."
+            link="https://github.com/Lucas1nogueira/workout-api"
+          />
+          <ProjectCard
+            title="Store API"
+            description="API for product management, built with Python and FastAPI, using Docker."
+            link="https://github.com/Lucas1nogueira/store-api"
+          />
+          <ProjectCard
+            title="Accounts"
+            description="Simulation of bank account management with Node.js, recording data with FileSystem and customized output with Inquirer and Chalk."
+            link="https://github.com/Lucas1nogueira/accounts"
+          />
+          <ProjectCard
+            title="Simple Products"
+            description="Simple product visualization using Node.js, Express and Handlebars."
+            link="https://github.com/Lucas1nogueira/simple-products"
+          />
+          <ProjectCard
+            title="Sapiens (Backend)"
+            description="Collaboration in a system designed for municipal education departments with the aim of automating and optimizing educational processes."
+            link="https://github.com/Lucas1nogueira/sapiens-backend"
+          />
+          <ProjectCard
+            title="Posts (Backend)"
+            description="Backend project with Node.js to simulate a server storing posts, including generating image descriptions using the Google Gemini API."
+            link="https://github.com/Lucas1nogueira/posts-backend"
+          />
+          <ProjectCard
+            title="Nearby"
+            description="Mobile app simulating the display of nearby establishments on the map and scanning QR Codes to obtain coupons."
+            link="https://github.com/Lucas1nogueira/nearby"
           />
           <ProjectCard
             title="Jumping Lizard"

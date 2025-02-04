@@ -21,7 +21,7 @@ export default function Footer() {
         }}
       >
         <FaCheckCircle size={16} style={{ paddingRight: "5px" }} />
-        Made in 2024 by Lucas Nogueira
+        Updated in 2025 by me
       </p>
     </div>
   );

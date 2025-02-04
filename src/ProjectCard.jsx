@@ -8,6 +8,7 @@ export default function ProjectCard(props) {
         width: "240px",
         minWidth: "200px",
         height: "150px",
+        marginRight: "30px",
         marginBottom: "30px",
         display: "flex",
         flexDirection: "column",

@@ -39,7 +39,7 @@ export default function SkillsSection() {
           width: "100%",
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
+          justifyContent: "flex-start",
           flexWrap: "wrap",
         }}
       >
