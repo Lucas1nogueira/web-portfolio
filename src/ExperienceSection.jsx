@@ -91,7 +91,7 @@ export default function ExperienceSection() {
             link="https://github.com/Lucas1nogueira/biblioteca"
           />
           <ProjectCard
-            title="Professor Evaluation System (SAD)"
+            title="Professor Evaluation System"
             description="Contribution to the development of the professor evaluation system at IFBA Irecê Campus."
             link="https://github.com/jonatasfbastos/sad"
           />
@@ -169,6 +169,11 @@ export default function ExperienceSection() {
             title="Nearby"
             description="Mobile app simulating the display of nearby establishments on the map and scanning QR Codes to obtain coupons."
             link="https://github.com/Lucas1nogueira/nearby"
+          />
+          <ProjectCard
+            title="Gentask"
+            description="Mobile app for task management with AI functionalities."
+            link="https://github.com/Lucas1nogueira/gentask"
           />
           <ProjectCard
             title="Jumping Lizard"
