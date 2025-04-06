@@ -17,7 +17,7 @@ export default function SocialButton(props) {
           : props.name == "GitHub"
           ? window.open("https://github.com/Lucas1nogueira")
           : props.name == "Email" &&
-            open("mailto:nog.lucas.1204@gmail.com", "_self");
+            open("mailto:dev.lucas.br@gmail.com", "_self");
       }}
       onMouseOver={() => setMouseOver(true)}
       onMouseLeave={() => setMouseOver(false)}
