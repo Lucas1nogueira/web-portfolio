@@ -34,7 +34,7 @@ export default function MainContent() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "flex-end",
-          color: "#777",
+          color: "var(--text-muted)",
           paddingTop: window.innerWidth < 1080 && "25px",
           paddingLeft: window.innerWidth > 1080 && "550px",
         }}
@@ -56,6 +56,7 @@ export default function MainContent() {
             Hello, I'm Lucas!
           </h1>
           <img
+            className="matte-3d"
             src={ProfileImage}
             style={{
               width: "120px",
@@ -71,10 +72,10 @@ export default function MainContent() {
             textAlign: "end",
           }}
         >
-          Welcome to my portfolio! My name is Lucas Nogueira and I'm a student
-          aiming to get a fullstack position, building qualified and intuitive
-          projects. I strive to continuously improve my skills and to achieve
-          better results.
+          Welcome to my portfolio! I'm Lucas Nogueira, a student pursuing a
+          fullstack developer role, passionate about building clean,
+          intuitive projects. I'm always working to sharpen my skills and
+          deliver better results.
         </p>
         <ScrollDownArrow />
       </div>

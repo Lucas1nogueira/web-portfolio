@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+:root {
+  --bg-page: #ffffff;
+  --text-primary: #333333;
+  --text-muted: #777777;
+  --text-muted-2: #999999;
+  --section-light-bg: linear-gradient(to right, #bbb, #eee, #aaa);
+  --shadow-raised-1: rgba(0, 0, 0, 0.18);
+  --shadow-raised-2: rgba(255, 255, 255, 0.7);
+  --shadow-inset-1: rgba(0, 0, 0, 0.08);
+  --shadow-inset-2: rgba(255, 255, 255, 0.4);
+}
+
+:root[data-theme="dark"] {
+  --bg-page: #16171b;
+  --text-primary: #e4e4e6;
+  --text-muted: #b7b7bb;
+  --text-muted-2: #9a9a9e;
+  --section-light-bg: linear-gradient(to right, #26272c, #1d1e22, #26272c);
+  --shadow-raised-1: rgba(0, 0, 0, 0.55);
+  --shadow-raised-2: rgba(255, 255, 255, 0.04);
+  --shadow-inset-1: rgba(0, 0, 0, 0.35);
+  --shadow-inset-2: rgba(255, 255, 255, 0.03);
+}
+
 body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

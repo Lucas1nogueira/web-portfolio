@@ -33,7 +33,7 @@ export default function SocialButton(props) {
           <FaLinkedin
             style={{ paddingRight: "5px" }}
             size={35}
-            color={props.sideMenu ? "white" : "#999"}
+            color={props.sideMenu ? "white" : "var(--text-muted-2)"}
           />
           {props.sideMenu && (
             <p style={{ fontSize: "18px", color: "white" }}>LinkedIn</p>
@@ -50,7 +50,7 @@ export default function SocialButton(props) {
           <FaGithub
             style={{ paddingRight: "5px" }}
             size={35}
-            color={props.sideMenu ? "white" : "#999"}
+            color={props.sideMenu ? "white" : "var(--text-muted-2)"}
           />
           {props.sideMenu && (
             <p style={{ fontSize: "18px", color: "white" }}>GitHub</p>
@@ -68,7 +68,7 @@ export default function SocialButton(props) {
             <MdEmail
               style={{ paddingRight: "5px" }}
               size={35}
-              color={props.sideMenu ? "white" : "#999"}
+              color={props.sideMenu ? "white" : "var(--text-muted-2)"}
             />
             {props.sideMenu && (
               <p style={{ fontSize: "18px", color: "white" }}>Email</p>
@@ -77,7 +77,9 @@ export default function SocialButton(props) {
         )
       )}
       {!props.sideMenu && isMouseOver && (
-        <p style={{ fontSize: "14px", color: "#777" }}>{props.name}</p>
+        <p style={{ fontSize: "14px", color: "var(--text-muted)" }}>
+          {props.name}
+        </p>
       )}
     </div>
   );

@@ -1,5 +1,6 @@
 import { LuMenuSquare } from "react-icons/lu";
 import SocialButton from "./SocialButton";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header(props) {
   return (
@@ -42,6 +43,7 @@ export default function Header(props) {
           <SocialButton name="LinkedIn" />
           <SocialButton name="GitHub" />
           <SocialButton name="Email" />
+          <ThemeToggle theme={props.theme} toggleTheme={props.toggleTheme} />
         </div>
       )}
     </div>

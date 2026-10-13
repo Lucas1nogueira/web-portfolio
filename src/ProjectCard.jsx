@@ -14,7 +14,8 @@ export default function ProjectCard(props) {
         flexDirection: "column",
         justifyContent: "space-between",
         background: "linear-gradient(to right, #333, #444, #333)",
-        boxShadow: "0px 3px 3px #000",
+        boxShadow:
+          "6px 6px 12px rgba(0,0,0,0.45), -2px -2px 6px rgba(255,255,255,0.04)",
         borderRadius: "20px",
         padding: 20,
       }}

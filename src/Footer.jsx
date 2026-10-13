@@ -3,13 +3,14 @@ import { FaCheckCircle } from "react-icons/fa";
 export default function Footer() {
   return (
     <div
+      className="matte-surface-inset"
       style={{
         width: "100%",
         margin: 0,
-        background: "linear-gradient(to right, #bbb, #eee, #aaa)",
+        background: "var(--section-light-bg)",
         justifyContent: "center",
         alignItems: "center",
-        color: "#333",
+        color: "var(--text-primary)",
         padding: "25px 0",
       }}
     >
@@ -21,7 +22,7 @@ export default function Footer() {
         }}
       >
         <FaCheckCircle size={16} style={{ paddingRight: "5px" }} />
-        Updated in 2025 by me
+        Last updated in 2026
       </p>
     </div>
   );

@@ -17,10 +17,11 @@ import { RiFlutterFill } from "react-icons/ri";
 export default function SkillsSection() {
   return (
     <div
+      className="matte-surface-inset"
       style={{
         maxWidth: "100%",
-        background: "linear-gradient(to right, #bbb, #eee, #aaa)",
-        color: "#333",
+        background: "var(--section-light-bg)",
+        color: "var(--text-primary)",
         padding: "30px 57px",
       }}
     >
@@ -31,8 +32,8 @@ export default function SkillsSection() {
         <h1 style={{ fontSize: "35px" }}>Skills</h1>
       </div>
       <p style={{ marginTop: "5px", fontSize: "18px" }}>
-        Troughout my studies I have earned knowledge in some languages and
-        frameworks:
+        Throughout my studies, I've gained experience with the following
+        languages and frameworks:
       </p>
       <div
         style={{

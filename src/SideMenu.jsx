@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import SocialButton from "./SocialButton";
+import ThemeToggle from "./ThemeToggle";
 
 export default function SideMenu(props) {
   const [closingAnimation, setClosingAnimation] = useState(false);
@@ -35,6 +36,11 @@ export default function SideMenu(props) {
         <SocialButton sideMenu={true} name="LinkedIn" />
         <SocialButton sideMenu={true} name="GitHub" />
         <SocialButton sideMenu={true} name="Email" />
+        <ThemeToggle
+          sideMenu={true}
+          theme={props.theme}
+          toggleTheme={props.toggleTheme}
+        />
       </div>
       <div
         style={{
